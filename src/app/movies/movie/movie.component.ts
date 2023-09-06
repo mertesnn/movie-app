@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core'
+import { Movies } from 'src/app/models/movie'
 
 @Component({
-  selector: 'app-movie',
-  templateUrl: './movie.component.html',
-  styleUrls: ['./movie.component.css']
+    selector: 'app-movie',
+    templateUrl: './movie.component.html',
 })
-export class MovieComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class MovieComponent {
+    @Input() movie: Movies | undefined
 }

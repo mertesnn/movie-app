@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core'
+import { MovieRepository } from '../models/movie.repository'
 
 @Component({
-  selector: 'app-movies',
-  templateUrl: './movies.component.html',
-  styleUrls: ['./movies.component.css']
+    selector: 'app-movies',
+    templateUrl: './movies.component.html',
 })
-export class MoviesComponent implements OnInit {
+export class MoviesComponent {
+    movieModel = new MovieRepository()
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+    movies = this.movieModel.getMovies()
 }
