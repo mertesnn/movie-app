@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { Movies } from '../models/movie'
 import { MovieRepository } from '../models/movie.repository'
 
 @Component({
@@ -6,7 +7,11 @@ import { MovieRepository } from '../models/movie.repository'
     templateUrl: './movies.component.html',
 })
 export class MoviesComponent {
-    movieModel = new MovieRepository()
+    movies: Movies[]
+    movieRepository: MovieRepository
 
-    movies = this.movieModel.getMovies()
+    constructor() {
+        this.movieRepository = new MovieRepository()
+        this.movies = this.movieRepository.getMovies()
+    }
 }

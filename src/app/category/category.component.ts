@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'
+import { Category } from '../models/category'
 import { CategoryRepository } from '../models/category.repository'
 
 @Component({
@@ -6,7 +7,11 @@ import { CategoryRepository } from '../models/category.repository'
     templateUrl: './category.component.html',
 })
 export class CategoryComponent {
-    categoryModel = new CategoryRepository()
+    categories: Category[]
+    categoryRepository: CategoryRepository
 
-    categories = this.categoryModel.getCategories()
+    constructor() {
+        this.categoryRepository = new CategoryRepository()
+        this.categories = this.categoryRepository.getCategories()
+    }
 }

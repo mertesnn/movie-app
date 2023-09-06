@@ -38,11 +38,11 @@ export class MovieRepository {
         ]
     }
 
-    getMovies() {
+    getMovies(): Movies[] {
         return this.movies
     }
 
-    getMoviesByID(id: number) {
-        return this.movies.filter((item) => item.id === id)
+    getMoviesByID(id: number): Movies {
+        return this.movies.find((item) => item.id === id)
     }
 }

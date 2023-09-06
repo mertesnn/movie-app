@@ -12,11 +12,11 @@ export class CategoryRepository {
         ]
     }
 
-    getCategories() {
+    getCategories(): Category[] {
         return this.categories
     }
 
-    getCategoriesByID(id: number) {
-        return this.categories.filter((item) => item.id === id)
+    getCategoriesByID(id: number): Category {
+        return this.categories.find((item) => item.id === id)
     }
 }
