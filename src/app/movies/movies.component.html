@@ -5,12 +5,12 @@
         {{ movies.length }} adet film bulundu.
     </div>
 
-    <ng-template
+    <!-- <ng-template
         [ngTemplateOutlet]="popularMoviesList"
         [ngTemplateOutletContext]="{
             movies: popularMovies
         }"
-    ></ng-template>
+    ></ng-template> -->
     <ng-template [ngTemplateOutlet]="moviesList"></ng-template>
 </div>
 
@@ -22,7 +22,7 @@
     <app-movie *ngFor="let movie of movies" [movie]="movie"></app-movie>
 </ng-template>
 
-<ng-template #popularMoviesList let-popularMovies="movies">
+<!-- <ng-template #popularMoviesList let-popularMovies="movies">
     <h1>Popüler Filmler</h1>
 
     <div class="row row-cols-1 row-cols-md-3 g-4 mb-3">
@@ -38,4 +38,4 @@
             </div>
         </div>
     </div>
-</ng-template>
+</ng-template> -->

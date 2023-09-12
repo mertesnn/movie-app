@@ -4,4 +4,5 @@ export interface Movies {
     desc: string
     img: string
     isPopular: boolean
+    publishedDate: Date
 }

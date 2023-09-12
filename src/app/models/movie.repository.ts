@@ -11,6 +11,7 @@ export class MovieRepository {
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus mauris, ornare et ornare eu, mattis molestie libero. Duis nec imperdiet tellus, id pretium neque. Phasellus vitae nibh id purus rhoncus commodo. Nulla vel ligula semper, imperdiet elit eu, suscipit velit. Vivamus tincidunt id mauris scelerisque viverra. Integer congue sem in nisl placerat accumsan. Nunc et justo eget nisi porttitor ultricies in at lorem. Aliquam hendrerit iaculis nisl, vel imperdiet diam congue non. ',
                 img: '1.jpeg',
                 isPopular: false,
+                publishedDate: new Date(2000, 10, 5),
             },
             {
                 id: 2,
@@ -18,6 +19,7 @@ export class MovieRepository {
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus mauris, ornare et ornare eu, mattis molestie libero. Duis nec imperdiet tellus, id pretium neque. Phasellus vitae nibh id purus rhoncus commodo. Nulla vel ligula semper, imperdiet elit eu, suscipit velit. Vivamus tincidunt id mauris scelerisque viverra. Integer congue sem in nisl placerat accumsan. Nunc et justo eget nisi porttitor ultricies in at lorem. Aliquam hendrerit iaculis nisl, vel imperdiet diam congue non. ',
                 img: '2.jpeg',
                 isPopular: true,
+                publishedDate: new Date(2000, 10, 5),
             },
             {
                 id: 3,
@@ -25,6 +27,7 @@ export class MovieRepository {
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus mauris, ornare et ornare eu, mattis molestie libero. Duis nec imperdiet tellus, id pretium neque. Phasellus vitae nibh id purus rhoncus commodo. Nulla vel ligula semper, imperdiet elit eu, suscipit velit. Vivamus tincidunt id mauris scelerisque viverra. Integer congue sem in nisl placerat accumsan. Nunc et justo eget nisi porttitor ultricies in at lorem. Aliquam hendrerit iaculis nisl, vel imperdiet diam congue non. ',
                 img: '3.jpeg',
                 isPopular: true,
+                publishedDate: new Date(2000, 10, 5),
             },
             {
                 id: 4,
@@ -32,6 +35,7 @@ export class MovieRepository {
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus mauris, ornare et ornare eu, mattis molestie libero. Duis nec imperdiet tellus, id pretium neque. Phasellus vitae nibh id purus rhoncus commodo. Nulla vel ligula semper, imperdiet elit eu, suscipit velit. Vivamus tincidunt id mauris scelerisque viverra. Integer congue sem in nisl placerat accumsan. Nunc et justo eget nisi porttitor ultricies in at lorem. Aliquam hendrerit iaculis nisl, vel imperdiet diam congue non. ',
                 img: '4.jpeg',
                 isPopular: true,
+                publishedDate: new Date(2000, 10, 5),
             },
             {
                 id: 5,
@@ -39,6 +43,7 @@ export class MovieRepository {
                 desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus mauris, ornare et ornare eu, mattis molestie libero. Duis nec imperdiet tellus, id pretium neque. Phasellus vitae nibh id purus rhoncus commodo. Nulla vel ligula semper, imperdiet elit eu, suscipit velit. Vivamus tincidunt id mauris scelerisque viverra. Integer congue sem in nisl placerat accumsan. Nunc et justo eget nisi porttitor ultricies in at lorem. Aliquam hendrerit iaculis nisl, vel imperdiet diam congue non. ',
                 img: '5.jpeg',
                 isPopular: false,
+                publishedDate: new Date(2000, 10, 5),
             },
         ]
     }
