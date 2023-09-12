@@ -7,11 +7,14 @@ import { MovieRepository } from '../models/movie.repository'
     templateUrl: './movies.component.html',
 })
 export class MoviesComponent {
+    title = 'Film Listesi'
     movies: Movies[]
+    popularMovies: Movies[]
     movieRepository: MovieRepository
 
     constructor() {
         this.movieRepository = new MovieRepository()
         this.movies = this.movieRepository.getMovies()
+        this.popularMovies = this.movieRepository.getPopularMovies()
     }
 }

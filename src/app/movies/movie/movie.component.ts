@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, Input } from '@angular/core'
 import { Movies } from 'src/app/models/movie'
 
 @Component({
@@ -6,5 +6,5 @@ import { Movies } from 'src/app/models/movie'
     templateUrl: './movie.component.html',
 })
 export class MovieComponent {
-    @Input() movie: Movies | undefined
+    @Input() movie: Movies
 }

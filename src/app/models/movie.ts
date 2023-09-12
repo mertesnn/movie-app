@@ -3,4 +3,5 @@ export interface Movies {
     name: string
     desc: string
     img: string
+    isPopular: boolean
 }
