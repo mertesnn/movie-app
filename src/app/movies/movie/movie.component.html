@@ -15,6 +15,12 @@
                 </p>
                 <p><b>Published Date:</b> {{ movie?.publishedDate | date }}</p>
                 <button class="btn btn-sm btn-outline-primary">Details</button>
+                <button
+                    class="btn btn-sm btn-primary ms-2"
+                    (click)="addToList($event)"
+                >
+                    Add to List
+                </button>
             </div>
         </div>
     </div>
