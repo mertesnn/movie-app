@@ -1,7 +1,17 @@
 <div class="list-group">
     <a
+        href="#"
+        class="list-group-item list-group-item-action"
+        [class.active]="displayAll"
+        (click)="selectCategory()"
+    >
+        {{ title }}
+    </a>
+    <a
         *ngFor="let category of categories"
         href="#"
+        (click)="selectCategory(category)"
+        [class.active]="!displayAll && selectedCategory.id == category.id"
         class="list-group-item list-group-item-action"
     >
         {{ category.name }}
