@@ -11,7 +11,7 @@
             <div class="card-body">
                 <h2 class="card-title">{{ movie?.name }}</h2>
                 <p class="card-text">
-                    {{ movie?.desc }}
+                    {{ movie?.desc | summary : 50 }}
                 </p>
                 <p><b>Published Date:</b> {{ movie?.publishedDate | date }}</p>
                 <button class="btn btn-sm btn-outline-primary">Details</button>
