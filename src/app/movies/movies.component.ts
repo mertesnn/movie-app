@@ -11,6 +11,7 @@ export class MoviesComponent {
     movies: Movies[]
     popularMovies: Movies[]
     movieRepository: MovieRepository
+    filterText: string = ''
 
     constructor() {
         this.movieRepository = new MovieRepository()

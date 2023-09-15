@@ -5,6 +5,15 @@
         {{ movies.length }} adet film bulundu.
     </div>
 
+    <div class="mb-3">
+        <input
+            type="text"
+            class="form-control"
+            placeholder="Search..."
+            [(ngModel)]="filterText"
+        />
+    </div>
+
     <!-- <ng-template
         [ngTemplateOutlet]="popularMoviesList"
         [ngTemplateOutletContext]="{
@@ -19,7 +28,10 @@
 </ng-template>
 
 <ng-template #moviesList>
-    <app-movie *ngFor="let movie of movies" [movie]="movie"></app-movie>
+    <app-movie
+        *ngFor="let movie of movies | movieFilter : filterText"
+        [movie]="movie"
+    ></app-movie>
 </ng-template>
 
 <!-- <ng-template #popularMoviesList let-popularMovies="movies">
